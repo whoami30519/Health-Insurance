@@ -1,0 +1,89 @@
+.task-and-image {
+  display: flex;
+  padding-top: 100px;
+  align-items: stretch; 
+  min-height: 250px;
+  .task-bar {
+    position: relative;
+    padding-top: 2px;
+    width: 120px;
+    display: block;
+    font-size: 18.5px;
+    border-radius: 5px;
+    ul {
+      display: block;
+      justify-content: space-around;
+      list-style: none;
+      padding-bottom: 0px;
+  
+      li {
+        flex: 1;
+        text-align: center;
+        padding : 10px;
+        border: 1px solid #ccc;
+        font-weight: bold;
+        background: rgb(235, 233, 233);
+  
+        a {
+          text-decoration: none;
+          color: black;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #10a37f;
+            ;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .image-display {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 2px;
+  }
+  
+  .image-display img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text_over_image {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .work_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work_title_01,
+  .work_title_02 {
+    width: 310px;
+    padding: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .work_title_01 h1,
+  .work_title_02 h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .work_title_01 p,
+  .work_title_02 p {
+    color: #666;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,20 @@
+/* Trong file CSS của bạn hoặc sử dụng styled-components */
+.status-cell.ngừngcungcấp {
+    color: rgb(140, 138, 138);
+  }
+
+  .status-cell.đangcungcấp {
+    color:rgb(27, 94, 32);
+  }
+
+  .bordered-cell {
+    padding: 7px; /* Khoảng cách giữa border và nội dung cell */
+    border-radius: 6px;
+
+  }
+  
+  .bordered-cell.ngừngcungcấp {
+    border: 1px solid rgb(140, 138, 138);}
+  .bordered-cell.đangcungcấp {
+    border: 1px solid  rgb(27, 94, 32); 
+  }

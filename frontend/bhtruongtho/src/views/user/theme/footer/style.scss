@@ -1,0 +1,43 @@
+@use "sass:map";
+@import "./../../../../style/pages/theme";
+
+.footer{
+    background: map.get($theme-colors, "pink-pastel");
+    padding: 10px 0;
+    color: map.get($theme-colors, "white-text");
+    .footer_about_logo{
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+    }
+
+    .footer_about__{
+        //text-indent: 50px;
+        line-height: 1.5;
+        text-align: justify;
+        //letter-spacing: 3px;
+        
+    }
+    .footer_widget{
+        display: inline-block;
+        margin-right: 20px;
+        ul li{
+        align-items: center;
+        list-style: none;
+        column-gap: 20px;
+        padding: 10px 0 13px;
+        a{
+            text-decoration: none;
+            color: map.get($theme-colors, "white-text");
+            letter-spacing: 2px;
+            transition: all 0.3s;
+            padding: 5px 0;
+            display: block;
+        }
+        }
+
+    }
+}

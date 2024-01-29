@@ -1,0 +1,175 @@
+@use "sass:map";
+@import "./../../../../style/pages/theme";
+
+.header_top {
+    background: rgb(235, 233, 233);
+
+}
+
+.header_top_right {
+    //background: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // text-transform: title;
+    font-weight: bold;
+    ul {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        list-style: none;
+        padding: 10px 10px 13px;
+
+    }
+
+    a {
+        font-size: 14px;
+        display: inline-block;
+        color: map.get($theme-colors, "normal-text");
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #10a37f;
+    }
+
+}
+
+.header_top_left {
+    display: flex;
+    //justify-content: end;
+    align-items: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        column-gap: 20px;
+        padding: 10px 0 13px;
+
+    }
+
+    li {
+        font-size: 14px;
+        display: inline-block;
+        align-items: center;
+
+        color: map.get($theme-colors, "normal-text");
+    }
+}
+
+.section {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav_header {
+    background:  rgb(235, 233, 233);
+
+}
+
+.header_logo {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header_menu {
+    padding: 15px 0;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        column-gap: 20px;
+
+        //padding: 10px 0 13px;
+        li {
+            list-style: none;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: map.get($theme-colors, "normal-text");
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                transition: all 0.3s;
+                padding: 5px 0;
+                display: block;
+            }
+        }
+    }
+
+    .active a {
+        color: map.get($theme-colors, "pink-pastel");
+    }
+
+    li:hover .header_menu_dropdown {
+
+        opacity: 1;
+        visibility: visible;
+        background: white;
+        box-shadow: 0 0 15px -5px;
+        transition: 0.5s;
+        animation: ease-in-out;
+        border-radius: 5px;
+
+    }
+
+    .header_menu_dropdown {
+
+        display: block;
+        position: absolute;
+        width: 180px;
+        z-index: 9;
+        padding: 5px 0;
+        transition: all 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        
+        li {
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                color: map.get($theme-colors, "normal-text");
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                transition: all 0.3s;
+                padding: 5px 5px;
+
+            }
+
+            :hover {
+                color: map.get($theme-colors, "pink-pastel");
+                background: white;
+            }
+        }
+
+    }
+}
+
+.header_reg {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+
+    span {
+        padding: 10px 10px;
+        background: map.get($theme-colors, "pink-pastel");
+        color: white;
+    }
+}
+.logout-button {
+    width: 100px;
+    /* Các thuộc tính CSS khác nếu cần */
+}

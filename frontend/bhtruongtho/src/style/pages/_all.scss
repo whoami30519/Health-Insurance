@@ -1,0 +1,142 @@
+@use "sass:map";
+@import "theme";
+@import "./responsive";
+html,
+body{
+    margin: 0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container__header__footer{
+    max-width: 1201px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    //background: map.get($theme-colors, "main");
+    margin: auto;
+}
+
+.container__body{
+    max-width: 1201px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    //background: map.get($theme-colors, "main");
+    margin: auto;
+    margin-top: 40px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+// .col-lg-3 {
+//     flex: 0 0 25%;
+//     max-width: 25%;   
+// }
+// .col-lg-6 {
+//     flex: 0 0 50%;
+//     max-width: 50%;   
+// }
+// .col-6 {
+//     flex: 0 0 50%;
+//     max-width: 50%;
+// }
+@include Responsive($DESKTOP){
+    .col-xl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;   
+    }
+    .col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;   
+    }
+    .col-xl-9 {
+        flex: 0 0 75%;
+        max-width: 75%;  
+    }
+    .col-xl-12{
+        flex: 0 0 100%;
+        max-width: 100%;  
+    }
+}
+@include Responsive($MEDIUM-DEVICE){
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;   
+    }
+    .col-lg-6{
+        flex: 0 0 50%;
+        max-width: 50%;  
+    }
+    .col-lg-9 {
+        flex: 0 0 75%;
+        max-width: 75%;  
+    }
+    .col-lg-12{
+        flex: 0 0 100%;
+        max-width: 100%;  
+    }
+}
+
+@include Responsive($TABLET-DEVICE){
+    .col-md-3{
+        flex: 0 0 25%;
+        max-width: 25%;  
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;   
+    }
+    .col-md-9{
+        flex: 0 0 75%;
+        max-width: 75%;  
+    }
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;   
+    }
+}
+@include Responsive($WIDE-MOBILE){
+    .col-sm-3{
+        flex: 0 0 25%;
+        max-width: 25%;  
+    }
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;   
+    }
+    .col-sm-9{
+        flex: 0 0 75%;
+        max-width: 75%;  
+    }
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;   
+    }
+}
+@include Responsive($SMALL-DEVICE){
+    .col-sx-3{
+        flex: 0 0 25%;
+        max-width: 25%;  
+    }
+    .col-sx-6 {
+        flex: 0 0 50%;
+        max-width: 50%;   
+    }
+    .col-sx-9{
+        flex: 0 0 75%;
+        max-width: 75%;  
+    }
+    .col-sx-12 {
+        flex: 0 0 100%;
+        max-width: 100%;   
+    }
+}

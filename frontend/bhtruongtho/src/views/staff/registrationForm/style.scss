@@ -1,0 +1,44 @@
+/* Trong file CSS của bạn hoặc sử dụng styled-components */
+.status-cell.bịtừchối {
+    color: rgb(230, 81, 0);
+  }
+  .status-cell.hếthạn {
+    color: rgb(198, 40, 40);
+  }
+  .status-cell.chờduyệt {
+    color:rgb(1, 87, 155);
+  }
+  .status-cell.đãkíchhoạt {
+    color:rgb(27, 94, 32);
+  }
+  .status-cell.đãhoàntiền {
+    color:rgb(27, 94, 32);
+  }
+  .status-cell.chờthanhtoán {
+    color: #7513dd;
+  }
+  .bordered-cell {
+    padding: 7px; /* Khoảng cách giữa border và nội dung cell */
+    border-radius: 6px;
+
+  }
+  
+  .bordered-cell.bịtừchối {
+    border: 1px solid rgb(230, 81, 0); }
+  .bordered-cell.hếthạn {
+    border: 1px solid  rgb(198, 40, 40);
+  }
+  .bordered-cell.chờduyệt {
+    border: 1px solid  rgb(1,87,155); 
+  }
+  .bordered-cell.đãkíchhoạt {
+    border: 1px solid  rgb(27, 94, 32); 
+  }
+  .bordered-cell.đãhoàntiền {
+    border: 1px solid  rgb(27, 94, 32); 
+  }
+  .bordered-cell.chờthanhtoán {
+    color: #7513dd;
+    border: 1px solid ; 
+  }
+  

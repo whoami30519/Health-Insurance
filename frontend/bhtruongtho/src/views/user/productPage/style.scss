@@ -1,0 +1,166 @@
+@use "sass:map";
+@import "./../../../style/pages/theme";
+
+* {
+    box-sizing: border-box;
+}
+
+.productPage {
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        //display: flex;
+        //align-items: center;
+        //column-gap: 10px;
+        list-style: none;
+        //padding: 10px 10px 13px;
+
+    }
+
+    li {
+        font-size: 14px;
+
+        align-items: center;
+
+        color: map.get($theme-colors, "normal-text");
+    }
+}
+
+.cards__container {
+    display: grid;
+    //grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 10px 20px;
+
+}
+
+.card__container {
+    //display: inline-block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 15px -5px;
+    transition: 0.5s;
+    animation: ease-in-out;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 5px;
+    z-index: 1;
+}
+
+.card__container:hover {
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0;
+    z-index: 2;
+}
+
+.card__content {
+    margin: 1rem;
+    margin-top: 0.5rem;
+
+}
+.img-container {
+    flex: 0 0 200px; /* Đặt chiều rộng cố định của img-container (ví dụ 200px) */
+    overflow: hidden; /* Ngăn hình ảnh mở rộng quá img-container */
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 200px; /* Đặt chiều cao cố định của hình ảnh (ví dụ 100px) */
+  object-fit: cover; 
+    display: block; /* Loại bỏ khoảng trắng dư thừa dưới hình ảnh */
+  }
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.card__title {
+    margin: 0.5rem;
+}
+
+.card__btn {
+    display: flex;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        padding: 0.5rem;
+        margin: 1rem;
+        border-style: solid;
+        border-color: map.get($theme-colors, "pink-pastel");
+        color: map.get($theme-colors, "pink-pastel");
+        align-items: center;
+        background: white;
+        font-weight: bold;
+    }
+
+    p:hover {
+        background: map.get($theme-colors, "pink-pastel");
+        color: white;
+    }
+}
+
+.detail__page {
+    .detail__container {
+        //background: blue;
+        margin: auto;
+        width: 80%;
+        .detail__title {
+
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            align-self: center;
+            margin: 10px;
+        }
+        .detail__body{
+            p {
+                margin: 10px;
+            }
+            .benh__list {
+                list-style-type: none;
+                padding: 0;
+              }
+            li{
+                margin: 10px;
+                padding-left: 10px;
+                text-indent: 20px; 
+            }
+        }
+        .detail__btn {
+            display: flex;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            p {
+
+                padding: 0.5rem;
+                margin: 1rem;
+                border-style: solid;
+                border-color: map.get($theme-colors, "pink-pastel");
+                color: map.get($theme-colors, "pink-pastel");
+                align-items: center;
+                background: white;
+                font-weight: bold;
+            }
+
+            p:hover {
+                background: map.get($theme-colors, "pink-pastel");
+                color: white;
+            }
+        }
+    }
+
+}
